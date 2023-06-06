@@ -1,0 +1,25 @@
+/* Style.css for second exercise on CSS basics TOP */
+
+.odd{
+    /* a light red/pink background, and a list of fonts containing `Verdana` and `DejaVu Sans` with `sans-serif` as a fallback */
+    background-color: rgb(250,42,85);
+    font-family: "Verdana", "Dejavu Sans", sans-serif;
+
+}
+
+.fontsize{
+    /* in addition to the styles for all odd numbered elements, add a font size of 24px */
+    font-size: 24px;
+}
+
+#second{
+    /* blue text and a font size of 36px */
+    font-size: 36px;
+    color:blue;
+}
+
+#fourth{
+        /* a light green background, a font size of 24px, and bold */
+        background-color: lightgreen;
+        font-weight: bold;
+    }
