@@ -1,3 +1,8 @@
+/* Once again, my solution is not the same as the one provided by TOP, nonetheless, 
+// the final product has no discernable difference. No overflow, the modal does not
+// shrink, nor do other elements inside. The HTML has 4 more lines of tags, including
+// two divs that do not affect anything. Buttons were given a 100px max-width declartion */
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 html, body {
@@ -20,6 +25,14 @@ body {
   width: 480px;
   border-radius: 10px;
   box-shadow: 2px 4px 16px rgba(0,0,0,.2);
+  padding:20px;
+  display: flex;
+}
+
+.container{
+  display:flex;
+  flex-direction:column;
+  padding-left: 20px;
 }
 
 .icon {
@@ -33,6 +46,18 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  display: flex;
+  flex-shrink: 0;
+}
+
+.commands{
+  display:flex;
+  gap:5px;
+}
+
+.topofheader{
+  display:flex;
+  flex-direction: column;
 }
 
 .close-button {
@@ -48,6 +73,8 @@ body {
   justify-content: center;
   border: 1px solid #eee;
   padding: 0;
+  flex-shrink: 0;
+  margin-left:auto;
 }
 
 button {
@@ -60,10 +87,24 @@ button.continue {
   background: royalblue;
   border: 1px solid royalblue;
   color: white;
+  max-width: 100px;
 }
 
 button.cancel {
   background: white;
   border: 1px solid #ddd;
   color: royalblue;
+    max-width: 100px;
+}
+
+.header{
+  font-weight: 900;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+}
+
+.text{
+  padding-top: 10px;
+  padding-bottom: 10px;
 }

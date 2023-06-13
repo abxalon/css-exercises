@@ -1,3 +1,7 @@
+/* Once again, the solution is not the same, the outcome is so similar that no difference can be perceived with the naked eye, CSS efficiency
+// is to be developed through practice... and making my own projects. I guess having the HTML thrust onto my face is what makes me doubt
+// specially since I don not define class names. That makes me falter sometimes. */
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 body {
@@ -5,10 +9,40 @@ body {
   margin: 0;
   overflow: hidden;
   font-family: Roboto, sans-serif;
+  display:flex;
+  text-align: center;
+  flex-direction:column;
+  justify-content: space-between;
+  margin:auto;
+  
+}
+
+.footer, 
+.header{
+  display: flex;
+  justify-content: space-between;
+}
+
+.left-links,
+.right-links{
+  margin:0;
+  padding:0;
+}
+
+.left-link{
+  margin-left: 5px;
+}
+
+.right-links{
+  margin-right: 5px;
 }
 
 img {
   width: 600px;
+}
+
+.footer{
+  background-color: rgb(240, 240, 240);
 }
 
 button {
@@ -16,6 +50,7 @@ button {
   border: none;
   border-radius: 8px;
   background: #eee;
+  padding:10px;
 }
 
 input {
@@ -24,4 +59,20 @@ input {
   padding: 8px 24px;
   width: 400px;
   margin-bottom: 16px;
+}
+
+ul{
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+}
+
+li{
+  padding:10px;
+}
+
+a{
+  text-decoration: none;
+  color:black;
 }
